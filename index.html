@@ -18,9 +18,9 @@
         <section>
             <h1>I am exploring Dom</h1>
             <ul>
-                <li>Document</li>
-                <li>Object</li>
-                <li>Model</li>
+                <li class="learn">Document</li>
+                <li class="learn">Object</li>
+                <li class="learn">Model</li>
             </ul>
         </section>
         <section>
@@ -52,16 +52,27 @@
         
         const sweetFruits = document.getElementsByClassName('sweet');
         for(sweet of sweetFruits) {
-            console.log(sweet.innerText);
+            // console.log(sweet.innerText);
         }
         const advanceSkills = document.getElementsByClassName('advance');
         for(skill of advanceSkills){
-            console.log(skill.innerText);
+            // console.log(skill.innerText);
         }
         const basicSkill = document.getElementsByClassName('basic');
         for(skill of basicSkill){
-            console.log(skill.innerText);
+            // console.log(skill.innerText);
         }
+
+        const querySelectorAll = document.querySelectorAll('.learn');
+        console.log(querySelectorAll);
+        for(learn of querySelectorAll){
+            console.log(learn.innerText);
+        }
+        const sweetQuery = document.querySelector('.sweet');
+        console.log(sweetQuery.innerText);
+        let single = document.querySelector('#fruit-title');
+        single.innerText = 'Learning is very important';
+        console.log(single.innerText);
     </script>
 </body>
 

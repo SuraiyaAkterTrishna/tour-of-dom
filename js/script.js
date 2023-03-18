@@ -1,1 +1,1 @@
-console.log('First step to learn DOM');
+// console.log('First step to learn DOM');
