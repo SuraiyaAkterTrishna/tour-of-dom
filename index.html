@@ -26,17 +26,17 @@
         <section>
             <h1>My Skills</h1>
             <ul>
-                <li>JS</li>
-                <li>CSS</li>
-                <li>HTML</li>
+                <li class="advance">JS</li>
+                <li class="advance">CSS</li>
+                <li class="basic">HTML</li>
             </ul>
         </section>
         <section>
             <h1 id="fruit-title">All Fruits of Summer</h1>
             <ul>
-                <li>Watermelon</li>
-                <li>Mango</li>
-                <li>Jackfruit</li>
+                <li class="sweet">Watermelon</li>
+                <li class="sour">Mango</li>
+                <li class="sweet">Jackfruit</li>
             </ul>
         </section>
     </main>
@@ -50,6 +50,18 @@
         let fruitTitle = document.getElementById('fruit-title');
         fruitTitle.innerText = 'Changed title for the fruits';
         
+        const sweetFruits = document.getElementsByClassName('sweet');
+        for(sweet of sweetFruits) {
+            console.log(sweet.innerText);
+        }
+        const advanceSkills = document.getElementsByClassName('advance');
+        for(skill of advanceSkills){
+            console.log(skill.innerText);
+        }
+        const basicSkill = document.getElementsByClassName('basic');
+        for(skill of basicSkill){
+            console.log(skill.innerText);
+        }
     </script>
 </body>
 
