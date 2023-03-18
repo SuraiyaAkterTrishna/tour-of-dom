@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Dom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hi.. I am Suraiya</h1>
+    </header>
+    <main>
+        <h1>I am exploring Dom</h1>
+        <ul>
+            <li>Document</li>
+            <li>Object</li>
+            <li>Model</li>
+        </ul>
+        <ul>
+            <li>JS</li>
+            <li>CSS</li>
+            <li>HTML</li>
+        </ul>
+    </main>
+    <script src="js/script.js"></script>
+    <script>
+       const liCollections = document.getElementsByTagName('li');
+       console.log(liCollections);
+       for(li of liCollections){
+        console.log(li.innerText);
+       }
+    </script>
+</body>
+</html>
