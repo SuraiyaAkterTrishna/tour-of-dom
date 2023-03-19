@@ -24,7 +24,7 @@
             </ul>
         </section>
         <section id="skills" class="skills latest-skills">
-            <h1>My Skills</h1>
+            <h1 class="skill-title">My Skills</h1>
             <ul>
                 <li class="advance">JS</li>
                 <li class="advance">CSS</li>
@@ -42,37 +42,7 @@
     </main>
     <script src="js/script.js"></script>
     <script>
-        const liCollections = document.getElementsByTagName('li');
-        // console.log(liCollections);
-        for (li of liCollections) {
-            // console.log(li.innerText);
-        }
-        let fruitTitle = document.getElementById('fruit-title');
-        fruitTitle.innerText = 'Changed title for the fruits';
-        
-        const sweetFruits = document.getElementsByClassName('sweet');
-        for(sweet of sweetFruits) {
-            // console.log(sweet.innerText);
-        }
-        const advanceSkills = document.getElementsByClassName('advance');
-        for(skill of advanceSkills){
-            // console.log(skill.innerText);
-        }
-        const basicSkill = document.getElementsByClassName('basic');
-        for(skill of basicSkill){
-            // console.log(skill.innerText);
-        }
-
-        const querySelectorAll = document.querySelectorAll('.learn');
-        console.log(querySelectorAll);
-        for(learn of querySelectorAll){
-            console.log(learn.innerText);
-        }
-        const sweetQuery = document.querySelector('.sweet');
-        console.log(sweetQuery.innerText);
-        let single = document.querySelector('#fruit-title');
-        single.innerText = 'Learning is very important';
-        console.log(single.innerText);
+        let skills = document.getElementsByClassName('latest-skills');
     </script>
 </body>
 
