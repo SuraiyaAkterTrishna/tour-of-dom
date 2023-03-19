@@ -12,7 +12,8 @@
 <body>
     <header>
         <h1>Hi.. I am Suraiya</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est perferendis suscipit veritatis quo et eligendi quam soluta nostrum architecto sed?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est perferendis suscipit veritatis quo et eligendi
+            quam soluta nostrum architecto sed?</p>
     </header>
     <main>
         <section>
@@ -24,7 +25,7 @@
             </ul>
         </section>
         <section id="skills" class="skills latest-skills">
-            <h1 class="skill-title">My Skills</h1>
+            <h1 id="skill-title">My Skills</h1>
             <ul>
                 <li class="advance">JS</li>
                 <li class="advance">CSS</li>
@@ -34,15 +35,31 @@
         <section>
             <h1 id="fruit-title" class="favourite bg-blue">All Fruits of Summer</h1>
             <ul>
-                <li class="sweet">Watermelon</li>
-                <li class="sour">Mango</li>
-                <li class="sweet">Jackfruit</li>
+                <li class="sweet fruit">Watermelon</li>
+                <li class="sour fruit">Mango</li>
+                <li class="sweet fruit">Jackfruit</li>
             </ul>
         </section>
     </main>
     <script src="js/script.js"></script>
     <script>
-        let skills = document.getElementsByClassName('latest-skills');
+        let skillTitle = document.getElementById('skill-title');
+        console.log(skillTitle);
+        skillTitle.style.backgroundColor = 'blue';
+        skillTitle.style.color = 'white';
+
+        let fruitList = document.getElementsByClassName('fruit');
+        console.log(fruitList);
+        for (fruit of fruitList) {
+            fruit.style.backgroundColor = 'orange';
+            fruit.style.color = 'blue';
+            fruit.style.padding = '10px';
+            fruit.style.border = '3px solid green';
+            fruit.style.borderRadius = '5px';
+            fruit.style.margin = 'auto';
+            fruit.style.width = '75%';
+        }
+
     </script>
 </body>
 
