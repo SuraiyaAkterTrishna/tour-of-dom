@@ -2,3 +2,7 @@
 
 // 1. directly set on the HTML element 
 
+// 2. add onclick function 
+function makeYellow(){
+    document.body.style.backgroundColor = 'yellow';
+}
