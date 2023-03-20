@@ -15,7 +15,7 @@
     </header>
     <main>
         <section>
-            <h1>I am exploring Dom</h1>
+            <h1 id="dom">I am exploring Dom</h1>
             <ul>
                 <li class="learn">Document</li>
                 <li class="learn">Object</li>
@@ -46,15 +46,17 @@
         skillTitle.style.color = 'white';
         skillTitle.style.padding = '10px 50px';
         const atTitle = skillTitle.getAttribute('class');
-        console.log(atTitle);
+        // console.log(atTitle);
         
         const title = document.getElementById('fruit-title');
         const classes = title.classList;
-        console.log(classes);
+        // console.log(classes);
         classes.remove('bg-blue');
-        console.log(classes);
+        // console.log(classes);
         classes.add('yellow-text');
-        console.log(classes);
+        // console.log(classes);
+        const dTitle = document.getElementById('dom');
+        dTitle.setAttribute('title', 'tooltip set by javascript');
     </script>
 </body>
 </html>
