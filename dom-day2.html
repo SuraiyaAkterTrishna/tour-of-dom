@@ -14,13 +14,14 @@
             quam soluta nostrum architecto sed?</p>
     </header>
     <main>
-        <section>
-            <h1 id="dom">I am exploring Dom</h1>
+        <section id="dom-container">
+            <!-- This is dom container section  -->
+            <!-- <h1 id="dom">I am exploring Dom</h1>
             <ul>
                 <li class="learn">Document</li>
                 <li class="learn">Object</li>
                 <li class="learn">Model</li>
-            </ul>
+            </ul> -->
         </section>
         <section id="skills" class="skills latest-skills">
             <h1 id="skill-title">My Skills</h1>
@@ -56,7 +57,10 @@
         classes.add('yellow-text');
         // console.log(classes);
         const dTitle = document.getElementById('dom');
-        dTitle.setAttribute('title', 'tooltip set by javascript');
+        // dTitle.setAttribute('title', 'tooltip set by javascript');
+        const container = document.getElementById('dom-container');
+        console.log(container.innerHTML);
+        
     </script>
 </body>
 </html>
