@@ -11,3 +11,11 @@ li {
 .learn {
     color: blueviolet;
 } */
+.bg-blue{
+    background-color: blue;
+    color: red;
+}
+.yellow-text {
+    color: yellow;
+    background-color: black;
+}
