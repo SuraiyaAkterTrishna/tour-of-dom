@@ -7,6 +7,36 @@
     <title>Comment Box</title>
 </head>
 <body>
-    
+    <h1>Please add your comment here..</h1>
+    <div id="comment-container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quibusdam porro labore fuga nemo, velit laborum aut recusandae veritatis eos tenetur corrupti reprehenderit nesciunt qui accusantium neque praesentium excepturi a!</p>
+        <p>Expedita cum praesentium odit sint iste provident aspernatur fugit repudiandae labore. Eveniet magni eum, voluptates ad quos voluptatibus, id excepturi cumque odio minima veniam aperiam neque earum repudiandae! Officia, vero!</p>
+        <p>Maxime voluptatum officiis optio delectus, neque saepe molestias nihil quisquam, expedita possimus laborum deserunt eos nam veniam ratione, corporis aspernatur dignissimos impedit facilis? In, quos nam. Nisi, numquam? Vero, harum!</p>
+    </div>
+    <div>
+        <textarea name="" id="new-comment" cols="60" rows="10"></textarea>
+        <br>
+        <button id="comment-btn">Post</button>
+    </div>
+    <script>
+        document.getElementById('comment-btn').addEventListener('click', function(){
+            // 1. get input comment from textarea 
+            const commentField = document.getElementById('new-comment');
+            const newComment = commentField.value;
+
+            // 2. pick comment container by id 
+            let commentContainer = document.getElementById('comment-container');
+
+            // 3. create new paragraph element and set inner text from input text 
+            const p = document.createElement('p');
+            p.innerText = newComment;
+
+            // 4. append paragraph to comment container 
+            commentContainer.appendChild(p);
+
+            // 5. clear the input comment field
+            commentField.value = '';
+        })
+    </script>
 </body>
 </html>
