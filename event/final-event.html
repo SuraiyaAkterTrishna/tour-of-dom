@@ -11,6 +11,12 @@
     <h2 id="handler-status">Default Text</h2>
     <button onclick="handleOnClick()">Handle event by add onclick function</button>
     <button id="event-listener">Handle event by add event listener</button>
+    <br>
+    <br><br>
+    <br>
+    <h2 id="handle-input">Default Input</h2>
+    <input type="text" name="" id="input-text">
+    <button id="update-button">Update</button>
     <script>
         // option : 1
         function handleOnClick(){
@@ -21,6 +27,14 @@
         document.getElementById('event-listener').addEventListener('click', function(){
             const handlerStatus = document.getElementById('handler-status');
             handlerStatus.innerText = 'Update by add event listener';
+        })
+        // recap final option 
+        document.getElementById('update-button').addEventListener('click', function(){
+            const inputField = document.getElementById('input-text');
+            const inputValue = inputField.value;
+            const handlerStatus = document.getElementById('handle-input');
+            handlerStatus.innerText = inputValue;
+            inputField.value = '';
         })
     </script>
 </body>
