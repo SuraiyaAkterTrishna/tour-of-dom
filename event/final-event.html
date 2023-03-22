@@ -9,6 +9,19 @@
 <body>
     <h1>Final Dom event handler</h1>
     <h2 id="handler-status">Default Text</h2>
-    <button >Handle event by add onclick function</button>
+    <button onclick="handleOnClick()">Handle event by add onclick function</button>
+    <button id="event-listener">Handle event by add event listener</button>
+    <script>
+        // option : 1
+        function handleOnClick(){
+            const handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText = 'Text Updated by handle onclick function';
+        }
+        // final option 
+        document.getElementById('event-listener').addEventListener('click', function(){
+            const handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText = 'Update by add event listener';
+        })
+    </script>
 </body>
 </html>
