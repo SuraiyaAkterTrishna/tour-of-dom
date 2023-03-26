@@ -9,11 +9,14 @@
 <body>
     <h1 id="secret-message">My secret info</h1>
     <input type="text" placeholder="Please type delete" id="delete-confirm">
-    <button id="delete-btn">Delete</button>
+    <button id="delete-btn" disabled>Delete</button>
 
     <script>
+        const deleteConfirm = document.getElementById('delete-confirm')
         document.getElementById('delete-btn').addEventListener('click', function(){
-            console.log('Delete button clicked');
+            /* if(deleteConfirm.value === 'delete'){
+                console.log('deleted');
+            } */
         })
     </script>
 </body>
